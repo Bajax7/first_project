@@ -11,10 +11,17 @@
         }
         body{
             text-align: center;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+
+
         }
         main{
-         padding-left: 150px;
-         padding-right: 150px;
+         padding-left: 25px;
+         padding-right: 25px;
+         max-width: 1000px;
+
         }
        img{
         width: 100px;
@@ -31,32 +38,96 @@
         text-align: center;
        }
        .left-section{text-align: left;}
+       .align-center{
+        text-align: center;
+       }
+       .button{
+        margin-top: 20px;
+        background-color: #ff0057;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border:none;
+        border-radius: 20px;
+        color: white;
+        transition: 0.15s;
+       }
+       .button:hover{
+        background-color: green;
+       }
 
-
+       .button:active{
+        background-color: blue;
+       }
        p{
         margin-top: 8px;
         /* color: green;} */
-       ul{
-        margin-top: 8px;
-        /* background-color:brown; */
-        }
-       .motion-design{
-        /* background-color: red; */
+        /* text-indent: 50px; */
+        /* text-align: justify; */
+        /* letter-spacing: 3px; */
+        color: rgba(0, 0, 0, 0.802);
        }
        .developer-name{
         margin-top: 20px;
-        background-color: green;
-        color: white;
+        color: black;
+        margin-bottom: 5px;
        }
        h2{
         padding-bottom: 2.5px;
-        border-bottom: 2px solid black;
+        border-bottom: 1px solid rgba(2, 3, 2, 0.048);
 
        }
+       h3{
+        color:rgba(0, 0, 0, 0.583)
+       }
+       ul{
+        margin-top: 20px;
+        /* background-color:brown; */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* border: 1px solid black; */
+        align-items: center;
+        /* justify-content: center; */
+        }
+        /* .justify-center{
+            justify-content: center;
+        } */
        li{
         padding-top: 2.5px;
-        padding-bottom: 2.5;
+        padding-bottom: 2.5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        /* width: 200px; */
+        margin-bottom: 10px;
+        list-style: none;
+        background-color: #f3f4f6;
+        color: #797f8c;
+        border-radius: 10px;
+        text-align: center;
+       
+       };
+       .list{
+        width: 100%;
        }
+       .list li{
+        width: calc( 25% - 10px );
+        padding-top: 18px;
+        padding-bottom: 20px;
+        
+       }
+
+       .list li p span:first-child{
+        font-weight:bold;
+        margin-right: 8px;
+    
+       }
+       .list li p span:nth-child(2){
+        color: rgba(0, 0, 0, 0.685);
+
+       }
+       
     </style>
     
     </head>
@@ -75,14 +146,36 @@
         </section>
         <section>
             <h2>Experience</h2>
-            <ul>
+            <ul class="list">
                 <li>
                     <h4>Apple</h4>
-                    <p>product designer.2020-22</p>
+                    <p>
+                        <span>product designer.</span>
+                        <span>2020-21</span>
+                    </p>
                 </li>
                 <li>
                     <h4>Sunshine</h4>
-                    <P>web designer.2022-23</P>
+                    <P>
+                        <span>web designer.</span>
+                        <span>2021-22</span>
+                    </P>
+                </li>
+                <li>
+                    <h4>Ladybug</h4>
+                    <p> 
+                        <span>tutor.</span> 
+                        <span>2022-23</span>
+                    </p>
+
+                </li>
+                <li>
+                    <h4>Eagle</h4>
+                    <p>
+                        <span>supervisor.</span>
+                        <span>2022-24</span>
+                    </p>
+
                 </li>
             </ul>
         </section>
@@ -104,11 +197,12 @@
 
             </ul>
         </section>
-        <section>
+        <section class="align-center">
             <h2>Let's create awesome products!</h2>
             <p>I am always open to discuss your project, improve your online presence or help with your UX/UI design challenges.</p>
-            <button>Say Hello</button>
+            <button class="button">Say Hello</button>
         </section>
+       
     </main>
  </body>
   
