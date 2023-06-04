@@ -54,14 +54,20 @@
         border: none;
         border-radius: 20px;
         color: white;
-        transition: 0.15s;
+        /* transition: 0.15s; */
+        
+      }
+      .b-link{
+        text-decoration: none;
+        color: white;
+
       }
       .button:hover {
-        background-color: green;
+        /* background-color: green; */
       }
 
       .button:active {
-        background-color: blue;
+        /* background-color: blue; */
       }
       p {
         margin-top: 8px;
@@ -163,6 +169,18 @@
         .list li {
           width: calc(100% - 10px);
         }
+      }
+      .social-link {
+         background-color: white;
+         text-decoration: none;
+         padding-top: 2.5px;
+        padding-bottom: 2.5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+      }
+      .link {
+        border: none;
       }
     </style>
   </head>
@@ -277,8 +295,18 @@
           I am always open to discuss your project, improve your online presence
           or help with your UX/UI design challenges.
         </p>
-        <button class="button">Say Hello</button>
+        <button class="button"><a class="b-link"href="https://www.facebook.com/wahab.sanyang" target="_blank">Say Hello</a></button>
       </section>
+      <section>
+        <h2>Network</h2>
+        <ul>
+          <li class="link"><a class="social-link"href="https://www.facebook.com/wahab.sanyang" target="_blank">Facebook</a></li>
+          <li class="link"><a class="social-link"href="https://www.instagram.com/bajax7/" target="_blank">Instagram</a></li>
+          <li class="link"><a class="social-link"href="https://twitter.com/SanyangWahab" target="_blank">Twitter</a></li>
+
+        </ul>
+      </section>
+      
     </main>
   </body>
 </html>
