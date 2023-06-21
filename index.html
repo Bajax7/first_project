@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>My portfolio</title>
+    <title>Wahab Sanyang</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="index.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,10 +30,52 @@
         padding-right: 25px;
         max-width: 1000px;
       }
-      img {
+      .profile-img {
         width: 100px;
         height: 100px;
         border-radius: 50px;
+      }
+      .card-link{
+        width: 100%;
+        max-width: 500px;
+        margin-top: 30px;
+        background-color: rgb(16, 85, 234);
+        padding: 40px;
+        border-radius: 18px;
+        
+    
+
+      }
+      .project-card{
+        width: 100px;
+        
+      }
+      .first-challenge-img{
+        width: 100%;
+        border-radius:15px;
+
+      }
+      .card-name{
+        margin-top: 30px;
+        font-size: 20px;
+      }
+      .link-to-the-project{
+        margin-top: 15px;
+        color: rgb(16, 85, 234);
+        font-size: 22px;
+        font-weight: 500px;
+        background-color:#ffffff;
+        display: inline-block;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 8px;
+
+        
+        
+        
+
       }
       section {
         padding-top: 30px;
@@ -198,7 +240,7 @@
   <body>
     <main>
       <section class="center-section">
-        <img src="./Images/profile.png" />
+        <img class="profile-img" src="./Images/profile.png" />
         <h1 class="developer-name">Wahab Sanyang</h1>
         <h3>Software Engineer</h3>
         <p>
@@ -213,6 +255,16 @@
           years. Currently am learning HTML and CSS. My goal is to acquire my
           first project in three months
         </p>
+      </section>
+      <section>
+        <h2>Portfolio</h2>
+        <div class="card-link">
+          <a class="project-card" href="https://challenge-one-six.vercel.app/" target="_blank">
+            <img class="first-challenge-img" src="./Images/desktop-design.jpg">
+             <p class="card-name">Order summary component</p>
+             <div class="link-to-the-project" >See the project</div>
+           </a>
+        </div>
       </section>
       <section>
         <h2>Experience</h2>
